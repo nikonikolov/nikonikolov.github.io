@@ -1,0 +1,21 @@
+TO DO:
+3. Check if you can dynamically get info about coursera/edx/udacity courses
+5. Macros HTML for paths
+8. Fix keywords and description of pages
+9. Think how to display the menu for a course
+11. Highlight subjects when in a subject
+
+15. make minjs and mincss
+
+16. make redirection to email for footer contacts
+17. make event more beautiful
+18. try converting everything into percentage
+19. Try reengineering middle cards for bigger titles - make the image and the title in a container and use float property
+20. For footer - check the svg images and changing color in code rather than changing the whole image
+
+
+22. Cards - description container should be defined by the length of the description - try loading without interenet to see what I mean
+23. Fix big cards
+24. Add more info about studying abroad - Maria Zlatkova - exchange in America?
+
+
