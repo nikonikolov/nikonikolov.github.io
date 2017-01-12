@@ -1,9 +1,10 @@
 # Personal Website
 ## Available at 
-- nikonikolov.com
-- nikonikolov.github.io/personal-website
+- http://nikonikolov.com/
+- http://nikonikolov.github.io/personal-website/
 
-## Testing on Local Machine, run in terminal from the root directory (you need Python 2.7+):
+## Testing on Local Machine:
+Run in terminal from the root directory (you need Python 2.7+):
 ```
 python -m SimpleHTTPServer
 ```
