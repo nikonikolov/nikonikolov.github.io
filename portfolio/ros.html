@@ -75,10 +75,12 @@
 
         <hr class="featurette-divider">
         <div class="row featurette">
-            <h2 class="featurette-heading text-muted">rospkg, rosdep and rosdistro for Slackware</h2>
-            <p class="lead">ROS has these internal tools that it uses to determine your OS distro in order to check for and install dependencies automatically. They are all implemented in python, so I just needed to write implementation of these tools for Slackware. The hardest part was finding a proper documentation as at some point I had read through a large part of the code to understand how it works.</p>
+            <div class="col-md-12">
+                <h2 class="featurette-heading text-muted">rospkg, rosdep and rosdistro for Slackware</h2>
+                <p class="lead">ROS has these internal tools that it uses to determine your OS distro in order to check for and install dependencies automatically. They are all implemented in python, so I just needed to write implementation of these tools for Slackware. The hardest part was finding a proper documentation as at some point I had read through a large part of the code to understand how it works.</p>
 
-            <p class="lead">The next part was less fun as I needed to define all Slackware software packages that ROS depends on. This required some more time and research but I finally got there. It was kind of interesting since I learned more about the packages that exist out there.</p>
+                <p class="lead">The next part was less fun as I needed to define all Slackware software packages that ROS depends on. This required some more time and research but I finally got there. It was kind of interesting since I learned more about the packages that exist out there.</p>
+            </div>
         </div>
 
 
@@ -95,8 +97,10 @@
 
         <hr class="featurette-divider">
         <div class="row featurette">
-            <h2 class="featurette-heading text-muted">Building ROS</h2>
-            <p class="lead">Lastly I had to build ROS. This was not straightforward either since Slackware manages its OS packages differently and this required its fair share of little cmkae patches to fix linking errors. I also got to discover a major bug on x86_64 architectures in the ROS build system that is currently beign fixed</p>
+            <div class="col-md-12">
+                <h2 class="featurette-heading text-muted">Building ROS</h2>
+                <p class="lead">Lastly I had to build ROS. This was not straightforward either since Slackware manages its OS packages differently and this required its fair share of little cmkae patches to fix linking errors. I also got to discover a major bug on x86_64 architectures in the ROS build system that is currently beign fixed</p>
+            </div>
         </div>
 
         <hr class="featurette-divider">

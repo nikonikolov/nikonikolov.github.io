@@ -78,14 +78,15 @@
         <hr class="featurette-divider">
 
         <div class="row featurette">
-            <h2 class="featurette-heading text-muted">First Prototype</h2>
-            <p class="lead">The type of control that DJI M-100 provides is accomplished by serial connection and a specific protocol implemented by DJI. It allows for an onboard embedded system to connect to the autopilot and send commands such as waypoint navigation.</p>
+            <div class="col-md-12">
+                <h2 class="featurette-heading text-muted">First Prototype</h2>
+                <p class="lead">The type of control that DJI M-100 provides is accomplished by serial connection and a specific protocol implemented by DJI. It allows for an onboard embedded system to connect to the autopilot and send commands such as waypoint navigation.</p>
 
-            <p class="lead">My choice of onboard embedded system was a Raspberry Pi 3 since the DJI SDK currently requires a thread-safe operating system to run on and linux seems like the best choice. For our first prototype we are going to use the Pi to partially navigate the drone using the SDK and on a given signal by the remote control of the DJI, activate a mechanism that drops the package. We are planning to automate this in the future, but for now we are going for the "minimum viable product" concept. </p>
+                <p class="lead">My choice of onboard embedded system was a Raspberry Pi 3 since the DJI SDK currently requires a thread-safe operating system to run on and linux seems like the best choice. For our first prototype we are going to use the Pi to partially navigate the drone using the SDK and on a given signal by the remote control of the DJI, activate a mechanism that drops the package. We are planning to automate this in the future, but for now we are going for the "minimum viable product" concept. </p>
 
-            <p class="lead">Our delivery mechanism is spool based and is managed by servo motors. Luckily, my <a href="https://github.com/nikonikolov/libdnx">libdnx</a> library (the same one I wrote for the <a href="/portfolio/wkquad.html">Walking Quad</a>) supports Raspberry Pi so I chose the same servos. I also had to simplify the electronics system as much as possible as my friend is setting everything up and it is really hard to make everything work from distance.</p>
+                <p class="lead">Our delivery mechanism is spool based and is managed by servo motors. Luckily, my <a href="https://github.com/nikonikolov/libdnx">libdnx</a> library (the same one I wrote for the <a href="/portfolio/wkquad.html">Walking Quad</a>) supports Raspberry Pi so I chose the same servos. I also had to simplify the electronics system as much as possible as my friend is setting everything up and it is really hard to make everything work from distance.</p>
 
- 
+            </div>
         </div>
 
 
