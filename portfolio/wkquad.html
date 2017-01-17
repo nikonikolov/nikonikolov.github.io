@@ -72,7 +72,7 @@
                 <h2 class="featurette-heading text-muted">Overview</h2>
                 <p class="lead">The goal of this project was to build a robot that combines both walkning and flying functionality to navigate in highly obstructed environment. It was developed as undergreaduate research at the <a href="https://www.imperial.ac.uk/aerial-robotics" target="_blank">Aerial Robotics Lab</a> at Imperial College London. I built the whole robot from scratch together with the control software (except the autopilot). I worked alone under the supervision of <a href="https://www.imperial.ac.uk/people/m.kovac" target="_blank">Dr Mirko Kovac</a> and Talib Alhinai (PhD student at the lab).</p>
 
-                <p class="lead">Currently I am writing an academic paper on the project.</p>
+                <p class="lead">The robot is first of its kind. I am currently writing an academic paper on the project.</p>
             </div>
             <div class="col-md-5 col-md-pull-7">
                 <img class="featurette-image img-responsive center-block" src="/img/portfolio/wkquad-page.png" alt="Walking Quad pic">
@@ -102,12 +102,42 @@
             </div>
         </div>
 
--->        
+-->
         <hr class="featurette-divider">
         <div class="row featurette">
             <h2 class="featurette-heading text-muted">Mechanics</h2>
-            <p class="lead">...</p>
+            <p class="lead">This was the hardest part since I don't have much expertise in the area. The mechanics requirements of the robot also presented a lot of limitations for the software and hardware part so I had to optimize as much as possible. As you see on the pictures, the arms of the quadcopter are also used as legs for walking.</p>
+
+            <p class="lead"> I had to prototype several different structures until I find the optimal one (unfortunately plain theory did not work in this case). This took a long time since sometimes a lot of changes were necessary. I used 3D printing and laser cutting to build custom joints and carbon fiber to build the legs. It turned out to be very hard to find a servo motor that has enough torque to support the robot while walking and simultaneously does not make the robot too heavy to fly. I ended up picking Dynamixel AX-12A servos.</p>
         </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <h2 class="featurette-heading text-muted">Electronics</h2>
+            <p class="lead">I got to learn a lot about electronics in practice - a bit different from the stuff they teach us at university. I had to design a system to power all 12 servos with each one possibly drawing up to 1.5A and make sure it is isolated from the digital electronic hardware connected. I ended up designing a specialized custom PCB.</p>
+            
+            <p class="lead">I also had to hack a bit the servo motors as the hardware communication protocol they use is half-duplex and I did not want to complicate the hardware of the robot further. I converted the full duplex interface of the microcontroller by putting a resistor between its rx and tx ports and connecting the rx node to the servo - a hacky fix that with some code worked perfectly.</p>
+        </div>
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <h2 class="featurette-heading text-muted">Software</h2>
+            <p class="lead">Definitely the most enjoyable part. I used an ARM mbed as controller for the walking functionality of the robot. My first goal was to write a C++ library for the Dynamixel servo motors that uses a serial protocol. It was good thing that I used a Hardware Abstraction Layer for it since I used the servos for other robotics projects, too. It currently supports mbed, Arduino and Raspberry Pi (or any Linux-based system) as I used the serevos for other robotics projects, too. The code is available on <a href="https://github.com/nikonikolov/libdnx">GitHub</a>.</p>
+
+            <p class="lead">Next was writing a walking algorithm. I read a few papers on walking algorithms, got to understand the math behind Inverse Kinematics and made my own implementation. At the time I started, this was one of my first software projects with such complexity, so I learned how to design my code structure in a way that makes it easy to debug and extend. I also developed a simulation to mimic the robot behaviour so I can debug more easily. You can find the code on <a href="https://github.com/nikonikolov/WalkingQuad">GitHub</a>.</p>
+
+            <p class="lead">In the end I had a Pixhawk running the autopilot software and the mbed running the walking algorithm. Of course I could do with the Pixhawk running everything, but that option required much more time. I also implemented wireless real-time communication with the mbed using ROS and Xbee. I got to learn all the ROS basics and how to use actionlib and rosserial (very useful packages).</p>
+
+        </div>
+
+
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <h2 class="featurette-heading text-muted">Conclusion</h2>
+            <p class="lead">The challenge was definitely combining the two operational modes. A hard part was that the robot was so complex that changing a small detail in one subsystem sometimes required entirely reengineering a whole other subsystem. This helped me learn the importance of designing everything to be scalable and extendable. Having spent numerous hours debugging why the software or hardware is not working, I can now honestly say that I am comfortable working on any kind of embedded or hands-on robotics project.</p>
+
+        </div>
+        <hr class="featurette-divider">
 
 
         <!-- ================================================== FOOTER ================================================== -->

@@ -64,50 +64,49 @@
 
             <div class="col-md-7 col-md-push-5">
                 <h2 class="featurette-heading text-muted">Overview</h2>
-                <p class="lead"><a href="http://www.eurobot.org/" target="_blank">Eurobot</a> is an international amateur robotics contest open to teams of students. This year Imperial College is sending a team to compete for it and I am the happy person who is the technical leader of our team. The competition is structured in three independent challenges that our robot needs to complete in 90 seconds. This year the topic is "Moon Village" and our team is focusing on the task of building a lunar base and launching a rocket from our robot. The robots must be fully autonomous. (The picture on the left is to give an idea of the usual size and complexity of a robot; it is not our robot, as it is not completed yet)
+                <p class="lead"><a href="http://www.eurobot.org/" target="_blank">Eurobot</a> is an international amateur robotics contest open to teams of students. This year Imperial College is sending a team to compete for it and I am the happy person who is the technical leader of our team of 12. The competition is structured in three independent challenges that our robot needs to complete in 90 seconds. This year the topic is "Moon Village" and our team is focusing on the task of building a lunar base and launching a rocket from our robot. The robots must be fully autonomous. (picture on the left is just an example; it is not our robot, as it is not completed yet)</p>
+
+                <p class="lead">Although I am supervising all three subteams that work on the mechanics, electronics and software, I am actively contributing to the software team.</p>
             </div>
             <div class="col-md-5 col-md-pull-7">
                 <img class="featurette-image img-responsive center-block" src="/img/portfolio/eurobot-page.png" alt="Eurobot pic">
             </div>
         </div>
 
-<!--
-        <hr class="featurette-divider">
 
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hObeYm4V9g4"></iframe>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <h2 class="featurette-heading text-muted">Software</h2>
+            <p class="lead">We have so far chosen a Raspberry Pi 3 as our main processor. For low level tasks and interfaces we are going to use mbeds that are connected to the Pi. We are currently finalizing our localization system which is based on custom-built sonar-based beacons. On the robot we have a ring of sonars which detect the pulses sent by the beacons. We also use odometry and Kalman filter to improve our estimation. We are going to use ROS as it provides easy to use communication procedures, configurable protocols and a lot of useful robotics packages. I am currently teaching a small ROS course to the team in order to get them on track.</p>
         </div>
 
         <hr class="featurette-divider">
 
         <div class="row featurette">
             <div class="col-md-7">                 
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. e dapibus, tellus ac cursus commodo.</p>
+                <h2 class="featurette-heading text-muted">Electronics</h2>
+                <p class="lead">Currently our biggest problems are in this area since. We have set a goal to make the robot move very fast. For this reason we decided to use brushless motors. Luckily a former ICRS (Imperial College Robotics Society) member has developed <a href="https://hackaday.io/project/11583-odrive-high-performance-motor-control">ODrive</a> - a way to precisely control DC brushless motors using encoders. The bad news are that it cannot be done in real time so we are now extending the system to support communication over Serial USB. We will also need to do so PID control calibration afterwards.</p>
             </div>
             <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <img class="featurette-image img-responsive center-block" src="/img/portfolio/ODrive.png" alt="ODrive pic">
             </div>
         </div>
+
         <hr class="featurette-divider">
+
         <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">                 
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. e dapibus, tellus ac cursus commodo.</p>
+            <div class="col-md-7 col-md-push-5">
+                <h2 class="featurette-heading text-muted">Mechanics</h2>
+                <p class="lead">We are currently building a prototype of a mechanism to grasp and drop lunar modules. We are also trying to store several lunar modules in our robot to save some time. It is kind of a complex system since the hand we are using needs to be very fast and able to rotate. Moreover as we need to place the lunar modules oriented with our team colour on top, the mechanism needs to be able to rotate the modules after they have been placed inside the robot. Will post some photos when we finalize it.</p>
+
+                <p class="lead">In parallel we are developing an omni-wheel base. We have decided to go for omni-wheel as it saves navigation time and is accurate enough. Hopefully this will win us more points at the competition</p>
             </div>
             <div class="col-md-5 col-md-pull-7">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+                <img class="featurette-image img-responsive center-block" src="/img/portfolio/omni-wheel.png" alt="omni-wheel pic">
             </div>
         </div>
 
         <hr class="featurette-divider">
-        <div class="row featurette">
-            <h2 class="featurette-heading text-muted">Mechanics</h2>
-            <p class="lead">...</p>
-        </div>
-
--->        
-
 
         <!-- ================================================== FOOTER ================================================== -->
         <div id="footer"></div>

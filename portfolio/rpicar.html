@@ -64,10 +64,12 @@
 
             <div class="col-md-7 col-md-push-5">
                 <h2 class="featurette-heading text-muted">Overview</h2>
-                <p class="lead">This is a coursework project we built in a team of 4 as part of our Robotics course at Imperial. It is a Raspberry Pi-operated robotic car that had to perform a series of challenges including localization, autonomous navigation, place recognition, wall following, obstacle detection, etc. There was a series of different challenges and milestones all listed below. We were so occupied with all exams and extra work that we realized we took hardly any pictures or videos of the car. Below is the only video we have. It is actually very amusing (wait for it) and the robot massively fails.</p>
+                <p class="lead">This is a coursework project we built in a team of 4 as part of our Robotics course at Imperial. It is a Raspberry Pi-operated robotic car that had to perform a series of challenges including localization, autonomous navigation, place recognition, wall following, obstacle detection, etc. There was a series of different challenges and milestones that ran for 3 months. In all of them the robot had to operate autonomously.</p>
+
+                <p class="lead">We were so occupied with all exams and extra work that we realized we took hardly any pictures or videos of the car. Below is the only video we have. It is actually very amusing and the robot massively fails.</p>
             </div>
             <div class="col-md-5 col-md-pull-7">
-                <img class="featurette-image img-responsive center-block" src="/img/portfolio/pepper-page.png" alt="Pepper pic">
+                <img class="featurette-image img-responsive center-block" src="/img/portfolio/rpicar.png" alt="Pepper pic">
             </div>
         </div>
 
@@ -76,49 +78,34 @@
         <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Our robot doesn’t handle backwards so well (wait for it…) <a href="https://t.co/FdoS30bxhB">pic.twitter.com/FdoS30bxhB</a></p>&mdash; Tom Hartley (@tmhrtly) <a href="https://twitter.com/tmhrtly/status/793760979322535937">November 2, 2016</a></blockquote>
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         
-<!--
-        
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://twitter.com/tmhrtly/status/793760979322535937"></iframe>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/hObeYm4V9g4"></iframe>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">                 
-            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. e dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-            </div>
-        </div>
         <hr class="featurette-divider">
         <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">                 
-            <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. e dapibus, tellus ac cursus commodo.</p>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-                <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-            </div>
+            <h2 class="featurette-heading text-muted">PID Control</h2>
+            <p class="lead">The first challenge was to calibrate the robot to be extremely precise. We were given a piece of paper and the robot had to draw a perfect square 10 times in a row. We got to try Ziegler-Nichols tuning method and then adjust the values additionally based on our own reasoning and robot behaviour. I finally got to learn how to calibrate PID controller. We even managed to find a bug in the template software implementation of the PID controller that we were given.</p>
         </div>
 
         <hr class="featurette-divider">
         <div class="row featurette">
-            <h2 class="featurette-heading text-muted">Mechanics</h2>
-            <p class="lead">...</p>
+            <h2 class="featurette-heading text-muted">Monte Carlo Localization</h2>
+            <p class="lead">I enjoyed this challenge a lot as it involved a lot of maths and a fairly complex algorithm. I also learned a lot about probabilistic robotics. There was again a lot of tuning involved but we did very well. It was also fun working with the extremely bad Lego Mindstorm sonar sensor as I had to write a filtering algorithm to infer and reject incorrect data.</p>
         </div>
 
--->        
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <h2 class="featurette-heading text-muted">Occupancy Mapping</h2>
+            <p class="lead">Very enjoyable as maths  and probabilistic robotics were involved again. Got to build a map of surroundings based on sonar readings.</p>
+        </div>
 
 
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <h2 class="featurette-heading text-muted">Grand Challenge</h2>
+            <p class="lead">We were supposed to detect and bump into 3 bottles which were placed on a given arena as fast as possible. Every group had freedom to choose their own approach. We were only allowed to use a rotating sonar sensor. We decided to go for place recognition. First we acquired readings of the sonar sensor at specificly chosen points on the arena (without any bottles) in order to build our places database. At the real challenge we reaquired readings at the same points and compared them to the ones we had in our database to detect anomalies, and hence, the bottles. There were substantially complex algorithms and filtering involved, which was very cool. We achieved extremely good accuracy.</p>
+        </div>
+
+        <hr class="featurette-divider">
+
+    
         <!-- ================================================== FOOTER ================================================== -->
         <div id="footer"></div>
 
