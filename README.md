@@ -10,3 +10,4 @@ python -m SimpleHTTPServer
 ```
 Then go to page http://127.0.0.1:8000/
 
+Use `ctrl+shift+r` for refreshing in order to bypass the browser cache
