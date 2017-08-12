@@ -1,103 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    
-    <!-- Description, keywords and author of this particular page for search engines-->
-    <meta name="description" content="Nikolay Nikolov Personal Website">
-    <meta name="keywords" content="Nikolay, Nikolov, nikonikolov, nikobnikolov, robotics, Imperial">      
-    <meta name="author" content="Nikolay Nikolov">      
+---
+layout: default
+title: Contact - Nikolay Nikolov
+permalink: /contact
+custom_css: /css/contact.css
+---
 
-    <title>Nikolay Nikolov Home</title>
-    
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/vendor/jquery/jquery-2.1.4.min.js"></script>
-    
-    <!-- Bootstrap -->
-    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
-        
-    <!-- Navigation bar -->
-    <script type="text/javascript" src="/navbar/navbar.js"></script>
-    <link type="text/css" rel="stylesheet" href="/navbar/navbar.css"/>
-    
-    <!-- Footer -->
-<!--    
-    <script type="text/javascript" src="/footer/footer.js"></script>
-    <link type="text/css" rel="stylesheet" href="/footer/footer.css"/>
--->    
+<h2 class="section-heading">Contact</h2>
 
-    <!-- CSS and JS for this page -->
-    <link href="/styles-common.css" rel="stylesheet">
-    <script type="text/javascript" src="/script-common.js"></script>
-    <link href="/contact.css" rel="stylesheet">
-
-    <!-- Tab icon -->
-    <link rel="shortcut icon" href="/img/favicon.ico">
-
-    <!-- Custom Fonts -->
-    <link href="/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-</head>
-
-<body>
-
-    <!-- ================================================== NAVBAR ================================================== -->
-    <div id="navigation"></div>
-
-
-    <!-- ================================================== BODY ================================================== -->
-    <div class="container">
-
-        <h2 class="section-heading">Contact</h2>
-
-        <hr class="featurette-divider">
+<hr class="featurette-divider">
 
 <!--                
-                    <ul class="list-unstyled social-buttons">
-                        <li><a class="contact_text" href=""><i class="fa fa-envelope fa-3x contact_icon" aria-hidden="true"></i>nikolay [dot] nikolov14 [at] imperial [dot] ac [dot] uk</a>
-                        </li>
-                    
-                        <li><a class="contact_text" href="https://github.com/nikonikolov" target="_blank"><i class="fa fa-github fa-3x contact_icon"></i>Github</a>
-                        </li>
-                        <li><a class="contact_text" href="https://www.linkedin.com/in/nikobnikolov/" target="_blank"><i class="fa fa-linkedin-square fa-3x contact_icon"></i>Linked In</a>
-                        </li>
-                    </ul>
+      <ul class="list-unstyled social-buttons">
+        <li><a class="contact_text" href=""><i class="fa fa-envelope fa-3x contact_icon" aria-hidden="true"></i>nikolay [dot] nikolov14 [at] imperial [dot] ac [dot] uk</a>
+        </li>
+      
+        <li><a class="contact_text" href="https://github.com/nikonikolov" target="_blank"><i class="fa fa-github fa-3x contact_icon"></i>Github</a>
+        </li>
+        <li><a class="contact_text" href="https://www.linkedin.com/in/nikobnikolov/" target="_blank"><i class="fa fa-linkedin-square fa-3x contact_icon"></i>Linked In</a>
+        </li>
+      </ul>
 -->
-            
-        <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
+  
+<div class="row featurette">
+  <div class="col-md-7 col-md-push-5">
 
-                <div class="">
-                    <ul class="list-unstyled social-buttons">
-                        <li><a class="contact_text" href=""><i class="fa fa-envelope fa-3x contact_icon" aria-hidden="true"></i>nikolay [dot] nikolov14 [at] ic [dot] ac [dot] uk</a>
-                        </li>
-                    
-                        <li><a class="contact_text" href="https://github.com/nikonikolov" target="_blank"><i class="fa fa-github fa-3x contact_icon"></i>Github</a>
-                        </li>
-                        <li><a class="contact_text" href="https://www.linkedin.com/in/nikobnikolov/" target="_blank"><i class="fa fa-linkedin-square fa-3x contact_icon"></i>Linked In</a>
-                        </li>
-                    </ul>
-                </div>
+    <div class="">
+      <ul class="list-unstyled social-buttons">
+        <li><a class="contact_text" href=""><i class="fa fa-envelope fa-3x contact_icon" aria-hidden="true"></i>{{site.email}}</a>
+        </li>
+      
+        <li><a class="contact_text" href="https://github.com/{{site.github}}" target="_blank"><i class="fa fa-github fa-3x contact_icon"></i>Github</a>
+        </li>
+        <li><a class="contact_text" href="https://www.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin-square fa-3x contact_icon"></i>Linked In</a>
+        </li>
+      </ul>
+    </div>
 
 
-            </div>
+  </div>
 
-            <div class="col-md-5 col-md-pull-7">
-                <img class="featurette-image img-responsive center-block profile_pic" src="/img/profile_pic.png" alt="Profile picture">
-            </div>
-        </div>
+  <div class="col-md-5 col-md-pull-7">
+    <img class="featurette-image img-responsive center-block profile_pic" src="/img/profile_pic.png" alt="Profile picture">
+  </div>
+</div>
 
-        <!-- ================================================== FOOTER ================================================== -->
-        <div id="footer"></div>
- 
-    </div><!-- /.container -->    
-</body>
-</html>
