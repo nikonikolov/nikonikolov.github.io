@@ -1,13 +1,11 @@
 # Personal Website
-## Available at 
-- http://nikonikolov.com/
-- http://nikonikolov.github.io/personal-website/
+Available at http://nikonikolov.com/
 
-## Testing on Local Machine:
-Run in terminal from the root directory (you need Python 2.7+):
+## Testing Locally
+1. Run in terminal from the root directory:
 ```
-python -m SimpleHTTPServer
+jekyll serve
 ```
-Then go to page http://127.0.0.1:8000/
+2. Go to http://localhost:4000/
 
-Use `ctrl+shift+r` for refreshing in order to bypass the browser cache
+3. Use `ctrl+shift+r` for refreshing in order to bypass the browser cache
