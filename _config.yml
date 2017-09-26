@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
 
 baseurl: ""
 # baseurl: "/" # the subpath of your site, e.g. /blog
-url: http://nikonikolov"
+url: http://nikonikolov
 
 email: "nikolay [dot] nikolov14 [at] ic [dot] ac [dot] uk"
 linkedin: "nikobnikolov"
