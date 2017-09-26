@@ -1,0 +1,44 @@
+---
+layout: default
+title: Blog - Nikolay Nikolov
+permalink: /blog
+---
+
+
+<h2 class="section-heading">Blog</h2>
+
+<hr class="featurette-divider">
+  
+<div class="row featurette">
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        <br>
+        <!-- {{ post.brief }} -->
+      </li>
+    {% endfor %}
+  </ul>
+
+<!--   <div class="col-md-7 col-md-push-5">
+    <p class="lead">
+    I am Nikolay Nikolov, an undergratuate student at <b>Imperial College London</b> currently pursuing <b>MEng in Electronic and Information Engineering</b>. Currently, I am doing the 4th year of my studies, including my master thesis as exchange student at <b>ETH Zurich</b>.
+    </p>
+
+    <p class="lead">
+    My main interest is exploring <b>Deep Reinforcement Learning with applications to Robotics</b>. I am also excited about areas such as Deep Learning, SLAM and Computer Vision.
+    </p>
+      
+    <p class="lead">
+    Previously I was part of <a href="http://www.imperial.ac.uk/people/s.leutenegger" target="_blank">Stefan Leutenegger's</a> research group at the <a href="http://www.imperial.ac.uk/dyson-robotics-lab/" target="_blank">Dyson Robotics Lab</a> at Imperial. In summer 2017, I interned at <a href="http://ocadotechnology.com/" target="_blank">Ocado Technology</a> as Robotics Research Intern. Back at Imperial, I also worked together with <a href="http://www.imperial.ac.uk/people/p.kormushev" target="_blank">Petar Kormushev</a> from the <a href="http://www.imperial.ac.uk/robot-intelligence/" target="_blank">Robot Intelligence Lab</a> and <a href="https://www.imperial.ac.uk/people/m.kovac" target="_blank">Mirko Kovac</a> at the <a href="https://www.imperial.ac.uk/aerial-robotics" target="_blank">Aerial Robotics Lab</a>. 
+    </p>
+
+    
+  </div>
+  <div class="col-md-5 col-md-pull-7">
+    <img class="featurette-image img-responsive center-block profile_pic" src="/img/profile_pic.png" alt="Profile picture">
+  </div>
+ -->
+</div>
+

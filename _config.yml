@@ -14,3 +14,5 @@ github: "nikonikolov"
 
 # Exclude these when building _site
 exclude: [Notes.txt, README.md, resources, UPDATES]
+
+disqus: nikonikolovblog
