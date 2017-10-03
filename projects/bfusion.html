@@ -6,17 +6,17 @@ permalink: /projects/bfusion
 
 <h2 class="section-heading">Bayesian Fusion for SLAM</h2>
 
+<!-- OVERVIEW -->
 <hr class="featurette-divider">
-
 <div class="row featurette">
 
   <div class="col-md-7 col-md-push-5">
     <h2 class="featurette-heading text-muted">Overview</h2>
     <p class="lead">
-    This is a research project I worked on together with Stefan Leutenegger at the Dyson Robotics Lab at Imperial. We submitted a paper to IEEE RA-L and ICRA 2018 (paper still in review).
+    This is a research project I worked on together with <a href="http://www.imperial.ac.uk/people/s.leutenegger" target="_blank">Dr Stefan Leutenegger</a> at the Dyson Robotics Lab at Imperial. We submitted a paper to IEEE RA-L and ICRA 2018 (paper still in review).
     </p>
     <p class="lead">
-    We developed a Bayesian formulation for fusing depth camera measurements in a volumetric occupancy octree grid. Our approach is particulary targeting SLAM applications and allows direct surface extraction from the octree. We prototyped efficient real-time implementation for a CPU or a CUDA-enabled GPU.
+    We developed a Bayesian formulation for fusing depth camera measurements in a volumetric occupancy octree grid. Our approach is particulary targeting SLAM applications and allows direct surface extraction from the octree. We prototyped efficient real-time implementation for a CPU or a CUDA-enabled GPU. The resulting octree grid allows for efficient path planning with OMPL.
     </p>
   </div>
   <div class="col-md-5 col-md-pull-7">
@@ -25,4 +25,35 @@ permalink: /projects/bfusion
 </div>
 
 
+<!-- DEMO -->
+<hr class="featurette-divider">
+<div class="row featurette">
+  
+  <div class="col-md-12">
+    <h2 class="featurette-heading-center text-muted">Demo</h2>
+    <p class="lead">
+      Below you can see our algorithm running on the ICL-NUIM Living Room Dataset <a href="#ref_1">[1]</a>. On the top-left you can see the reconstrudted 3D model, on the top-right - the RGB image, on bottom-left - the depth image and on bottom-right - the tracking error.
+    </p>
+  </div>
+
+  <div class="col-md-10 col-md-push-1">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/aEcje9tMJhs"></iframe>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- REFERENCES -->
+<hr class="featurette-divider">
+<div class="row featurette">
+  <p class="lead" id="ref_1"> 
+    [1] <a href="https://www.doc.ic.ac.uk/~ahanda/VaFRIC/icra2014.pdf">A Benchmark for RGB-D Visual Odometry, 3D Reconstruction and SLAM. ICRA 2014.</a></br>
+    A. Handa and T. Whelan and J.B. McDonald and A.J. Davison
+  </p>
+</div>
+
+
+<!-- END -->
 <hr class="featurette-divider">

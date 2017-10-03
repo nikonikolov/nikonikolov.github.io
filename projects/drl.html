@@ -7,20 +7,50 @@ permalink: /projects/drl
 
 <h2 class="section-heading">Deep Reinforcement Learning for Robot Picking</h2>
 
+<!-- OVERVIEW -->
 <hr class="featurette-divider">
-
 <div class="row featurette">
 
   <div class="col-md-7 col-md-push-5">
     <h2 class="featurette-heading text-muted">Overview</h2>
     <p class="lead">
-    I built this project during a 10-week internship at <a href="http://ocadotechnology.com/" target="_blank">Ocado Technology</a> in summer 2017. I implemented an algorithm for a robotic arm to pick objects from a basket based on uncalibrated camera input. The approach was primarily based on the paper <a href="https://arxiv.org/abs/1603.02199" target="_blank">[1] Sergey Levine, Peter Pastor, Alex Krizhevsky, and Deirdre Quillen. Learning hand-eye coordination for robotic grasping with deep learning and large-scale data collection. CoRR, abs/1603.02199, 2016</a>. The implementation I wrote is in TensorFlow. For picking, I used a suction cup system developed by Ocado Technology. I deployed the algorithm on a <a href="https://www.universal-robots.com/products/ur10-robot/" target="_blank">UR10 robotic arm</a>.
+    I built this project during a 10-week internship at <a href="http://ocadotechnology.com/" target="_blank">Ocado Technology</a> in summer 2017. I implemented an algorithm for a robotic arm to pick objects from a basket based on uncalibrated camera input. The approach was primarily based on a paper <a href="#ref_1">[1]</a> by Prof Sergey Levine. The implementation I wrote is in TensorFlow. For picking, I used a suction cup system developed by Ocado Technology. I also deployed the algorithm on a <a href="https://www.universal-robots.com/products/ur10-robot/" target="_blank">UR10 robotic arm</a>.
     </p>
   </div>
   <div class="col-md-5 col-md-pull-7">
-    <img class="featurette-image img-responsive center-block img" src="/img/portfolio/deeplearning-page.png" alt="robots"  title="https://arxiv.org/abs/1603.02199">
+    <img class="featurette-image img-responsive center-block img" src="/img/portfolio/deeplearning-page.png" alt="robots"  title="Photo Credits: Google Research">
   </div>
 </div>
 
 
+<!-- DEMO -->
+<hr class="featurette-divider">
+<div class="row featurette">
+  
+  <div class="col-md-12">
+    <h2 class="featurette-heading-center text-muted">Demo</h2>
+    <p class="lead">
+      Below you can see a demo of the data collection stage. The robot is using a random policy and an episode consists of 2 steps where the last step is turning on the suction. In order to increase the amount of successful attempts, we first move the robot only to the XY coordinate of the destination and then move downwards until an object is detected by a Force-Torque sensor. Note that this approach is used only at the very early stage for initial data collection. After that, the arm moves directly to a given goal point in order to allow for objects to be moved by the algorithm.
+    </p>
+  </div>
+
+  <div class="col-md-10 col-md-push-1">
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/udiM-7qXo40"></iframe>
+    </div>
+  </div>
+</div>
+
+
+<!-- REFERENCES -->
+<hr class="featurette-divider">
+<div class="row featurette">
+  <p class="lead" id="ref_1"> 
+    [1] <a href="https://arxiv.org/abs/1603.02199">Learning hand-eye coordination for robotic grasping with deep learning and large-scale data collection. CoRR 2016.</a></br>
+    Sergey Levine, Peter Pastor, Alex Krizhevsky, and Deirdre Quillen
+  </p>
+</div>
+
+
+<!-- END -->
 <hr class="featurette-divider">
