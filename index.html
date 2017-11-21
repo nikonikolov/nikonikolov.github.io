@@ -2,33 +2,308 @@
 layout: default
 title: Home - Nikolay Nikolov
 permalink: /
+no_navbar:
 ---
 
 
-<h2 class="section-heading">About</h2>
+<!-- ========================================================================= -->
+<!-- ================================= ABOUT ================================= -->
+<!-- ========================================================================= -->
+
+<h2 id="h2-about" class="section-heading">About</h2>
 
 <hr class="featurette-divider">
   
 <div class="row featurette">
   <div class="col-md-7 col-md-push-5">
+
+    <h2><b>Nikolay Nikolov</b></h2>
+    <h2></h2>
+    <!-- +++++++++++++++++++++++++++++++++ INTRO +++++++++++++++++++++++++++++++++ -->
     <p class="lead">
-    I am Nikolay Nikolov, an undergratuate student at <b>Imperial College London</b> pursuing <b>MEng in Electronic and Information Engineering</b>. Currently, I am doing the 4th year of my studies, including my Master's Thesis, as exchange student at <b>ETH Zurich</b>.
+    I am an undergratuate student at <b>Imperial College London</b> pursuing <b>MEng in Electronic and Information Engineering</b> (with integrated BEng). Currently, I am doing the 4th year of my studies, including my Master's Thesis, as exchange student at <b>ETH Zurich</b>.
     </p>
 
     <p class="lead">
-    My main interest is in the area of <b>Deep Reinforcement Learning for Robotics</b>. I am also excited about fields such as Deep Learning, SLAM and Computer Vision.
+    My research goal is developing algorithms which make robots more intelligent and autonomous, by enabling them to acquire new skills on their own. I am mainly working in <b>Deep Learning and Reinforcement Learning for Robotics</b>. I am also interested in Computer Vision.
     </p>
       
     <p class="lead">
-    Currently, I am part of <a href="https://las.inf.ethz.ch/krausea" target="_blank">Prof. Andreas Krause</a>'s research group at the <a href="https://las.inf.ethz.ch/" target="_blank">Learning & Adaptive Systems Lab</a> at ETH. Previously, I was part of <a href="http://www.imperial.ac.uk/people/s.leutenegger" target="_blank">Prof. Stefan Leutenegger</a>'s group at the <a href="http://www.imperial.ac.uk/dyson-robotics-lab/" target="_blank">Dyson Robotics Lab</a> at Imperial. 
-    I have also worked together with <a href="http://www.imperial.ac.uk/people/p.kormushev" target="_blank">Prof. Petar Kormushev</a> from the <a href="http://www.imperial.ac.uk/robot-intelligence/" target="_blank">Robot Intelligence Lab</a> and <a href="https://www.imperial.ac.uk/people/m.kovac" target="_blank">Prof. Mirko Kovac</a> at the <a href="https://www.imperial.ac.uk/aerial-robotics" target="_blank">Aerial Robotics Lab</a>. 
+    Currently, I am part of Prof. <a href="https://las.inf.ethz.ch/krausea" target="_blank">Andreas Krause</a>'s research group at the <a href="https://las.inf.ethz.ch/" target="_blank">Learning & Adaptive Systems Lab</a> at ETH. Previously, I was part of Prof. <a href="http://www.imperial.ac.uk/people/s.leutenegger" target="_blank">Stefan Leutenegger</a>'s group at the <a href="http://www.imperial.ac.uk/dyson-robotics-lab/" target="_blank">Dyson Robotics Lab</a> at Imperial. 
+    I have also worked together with Prof. <a href="http://www.imperial.ac.uk/people/p.kormushev" target="_blank">Petar Kormushev</a> from the <a href="http://www.imperial.ac.uk/robot-intelligence/" target="_blank">Robot Intelligence Lab</a> and Prof. <a href="https://www.imperial.ac.uk/people/m.kovac" target="_blank">Mirko Kovac</a> at the <a href="https://www.imperial.ac.uk/aerial-robotics" target="_blank">Aerial Robotics Lab</a>. 
     </p>
     <!-- In summer 2017, I interned at <a href="http://ocadotechnology.com/" target="_blank">Ocado Technology</a> as Robotics Research Intern.  -->
 
-    
+    <!-- +++++++++++++++++++++++++++++++++ CONTACT +++++++++++++++++++++++++++++++++ -->
+    <div class="">
+      <ul class="list-unstyled social-buttons">
+        <li><a href="/resume-nikolay-nikolov.pdf" target="_blank"><i class="fa fa-file-pdf-o fa contact_icon"></i>CV</a></li>
+
+        <li><a href=""><i class="fa fa-envelope fa contact_icon" aria-hidden="true"></i>{{site.email}}</a></li>
+      
+        <li><a href="https://github.com/{{site.github}}" target="_blank"><i class="fa fa-github fa contact_icon"></i>GitHub</a></li>
+        
+        <li><a href="https://www.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin-square fa contact_icon"></i>LinkedIn</a></li>
+      </ul>
+    </div>
+
   </div>
+
+  <!-- +++++++++++++++++++++++++++++++++ PICTURE +++++++++++++++++++++++++++++++++ -->
   <div class="col-md-5 col-md-pull-7">
     <img class="featurette-image img-responsive center-block profile_pic" src="/img/profile_pic.png" alt="Profile picture">
   </div>
 </div>
+
+<!-- ============================================================================ -->
+<!-- ================================= PUBLICATIONS ============================= -->
+<!-- ============================================================================ -->
+<h2 id="h2-publications" class="section-heading">Publications</h2>
+<hr class="featurette-divider">
+
+<h3 class="pub-heading">Preprints</h3>
+
+<div class="row featurette publication">
+  <div class="col-md-4">
+    <img class="featurette-image img-responsive center-block profile_pic" src="/img/portfolio/bayesianslam.png" alt="bfusion picture">
+  </div>
+
+  <div class="col-md-8">
+  <p class="lead"><b>Efficient Octree-Based Volumetric SLAM Supporting Signed-Distance and Occupancy Mapping.</b><br>
+  Emanuele Vespa, Nikolay Nikolov, Marius Grimm, Luigi Nardi, Paul H J Kelly, Stefan Leutenegger. IEEE International Conference on Robotics and Automation (ICRA), 2018
+  </p>
+  <p class="lead">We propose a bayesian formulation for fusing depth camera measurements in a volumetric occupancy octree grid. Our approach is particulary targeting SLAM applications and allows direct surface extraction from the octree. We also provide a CPU-optimized octree library for 3D reconstruction and SLAM that aims to allow implementing general-purpose real-time mapping algorithms.
+  </p>
+  </div>
+
+</div>
+
+<!-- <div class="row featurette publication">
+  <div class="col-md-4">
+    <img class="featurette-image img-responsive center-block profile_pic" src="/img/portfolio/bayesianslam.png" alt="bfusion picture">
+  </div>
+
+  <div class="col-md-8">
+  <p class="lead"><b>Efficient Octree-Based Volumetric SLAM Supporting Signed-Distance and Occupancy Mapping.</b><br>
+  Emanuele Vespa, Nikolay Nikolov, Marius Grimm, Luigi Nardi, Paul H J Kelly, Stefan Leutenegger. IEEE International Conference on Robotics and Automation (ICRA), 2018
+  </p>
+  <p class="lead">We propose a bayesian formulation for fusing depth camera measurements in a volumetric occupancy octree grid. Our approach is particulary targeting SLAM applications and allows direct surface extraction from the octree. We also provide a CPU-optimized octree library for 3D reconstruction and SLAM that aims to allow implementing general-purpose real-time mapping algorithms.
+  </p>
+  </div>
+
+</div>
+ -->
+
+<!-- ============================================================================ -->
+<!-- ================================= PROJECTS ================================= -->
+<!-- ============================================================================ -->
+
+<h2 id="h2-projects" class="section-heading">Projects</h2>
+<hr class="featurette-divider">
+
+<div class="row">
+
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/drl" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/deeplearning.png" class="img-responsive" alt="" title="Image Source: Google Research https://arxiv.org/abs/1603.02199">
+    </a>
+    <div class="portfolio-caption">
+      <h4>Deep RL for Robot Picking</h4>
+      <p class="text-muted">Ocado Technology Summer Internship</p>
+    </div>
+  </div>
+
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/bfusion" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/bayesianslam.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>Bayesian Fusion for SLAM</h4>
+      <p class="text-muted">Robotics Research</p>
+    </div>
+  </div>
+
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/asda" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/asda.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>Autonomous Snack Delivery</h4>
+      <p class="text-muted">Robotics Group Project</p>
+    </div>
+  </div>
+  
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/wkquad" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/wkquad.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>Walking Quadcopter</h4>
+      <p class="text-muted">Robotics Research</p>
+    </div>
+  </div>
+  
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/dronedelivery" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/drone.png" class="img-responsive" alt="" title="Image Source: http://www.blackhawkaeronautical.com/dji-matrice-m100.html">
+    </a>
+    <div class="portfolio-caption">
+      <h4>Drone Delivery</h4>
+      <p class="text-muted">Robotics Project</p>
+    </div>
+  </div>
+
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/eurobot" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/eurobot.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>Eurobot</h4>
+      <p class="text-muted">Robotics Competition</p>
+    </div>
+  </div>
+
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/rpicar" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/rpicar.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>Autonomous Robotic Car</h4>
+      <p class="text-muted">Robotics Coursework</p>
+    </div>
+  </div>
+
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/ccompiler" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/c1.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>C Compiler</h4>
+      <p class="text-muted">Compilers Coursework</p>
+    </div>
+  </div>
+
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/ros" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/ros.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>ROS Kinetic for Slackware Linux</h4>
+      <p class="text-muted">Open Source Contribution</p>
+    </div>
+  </div>
+
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/hackzurich" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/fridge.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>Fridge Content Tracker</h4>
+      <p class="text-muted">HackZurich Hackathon</p>
+    </div>
+  </div>
+
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/mips" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/mips.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>MIPS CPU and Cache Simulators</h4>
+      <p class="text-muted">Computer Architecture Coursework</p>
+    </div>
+  </div>
+
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/mmudebugger" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/mmu.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>Memory Chip Debugger</h4>
+      <p class="text-muted">ARM Ltd Summer Internship</p>
+    </div>
+  </div>
+
+  <!-- ++++ PROJECT ++++ -->
+  <div class="col-md-4 col-sm-6 portfolio-item">
+    <a href="/projects/pepper" class="portfolio-link">
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <img src="/img/portfolio/pepper.png" class="img-responsive" alt="">
+    </a>
+    <div class="portfolio-caption">
+      <h4>Pepper recognition and speech</h4>
+      <p class="text-muted">UK NAO Hackathon</p>
+    </div>
+  </div>
+
+</div><!-- /.row -->
+
+
+<!-- ======================================================================= -->
+<!-- ================================= END ================================= -->
+<!-- ======================================================================= -->
+
+<hr class="featurette-divider">
 
