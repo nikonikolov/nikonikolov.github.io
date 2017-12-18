@@ -13,22 +13,36 @@ permalink: /projects/rpicar
 
   <div class="col-md-7 col-md-push-5">
     <h2 class="featurette-heading text-muted">Overview</h2>
-    <p class="lead">This is a coursework project that we built in a team of 4 as part of our Robotics course at Imperial. It is a Raspberry Pi-operated robotic car that had to perform a series of challenges including localization, autonomous navigation, place recognition, wall following, obstacle detection, etc. There was a series of different challenges and milestones that ran for 3 months. In all of them the robot had to operate autonomously.</p>
+    <p class="lead">This is a coursework project for our Robotics course at Imperial. It is a Raspberry Pi-operated robotic car that had to perform a series of challenges including Monte Carlo localization, autonomous navigation, place recognition, wall following, obstacle detection, etc. There was a series of different challenges and milestones that ran for 3 months. In all of them the robot had to operate fully autonomously.
+    </p>
 
-    <p class="lead">We were so occupied with all exams and extra work that we realized we took hardly any pictures or videos of the car. Below is the only video we have. It is actually very amusing and the robot massively fails.</p>
+    <p class="lead">Our work included calibrating a PID controller, implementing Monte Carlo Locatization and probabilistic Occupancy Mapping, and many other improvised tricks. For the final challenge, we implemented place recognition and anomaly detection in order to detect and localize new objects on the robot arena. We achieved very high accuracy. 
+    </p>
+
+    <p class="lead">This project was built in collaboration with Fu Yong Quah, Thomas Hartley and Benjamin Withers. 
+    </p>
+
   </div>
   <div class="col-md-5 col-md-pull-7">
     <img class="featurette-image img-responsive center-block" src="/img/portfolio/rpicar.png" alt="Pepper pic">
   </div>
-<html lang="en">
 </div>
 
 <hr class="featurette-divider">
 
+<div class="row featurette">
+  <div class="col-md-12">
+    <p class="lead">
+      We were so occupied with exams and extra work that we forgot to take proper pictures or videos of the car. The only video we have is actually very amusing and the robot massively fails.
+    </p>
+  </div>
+</div>
+
+<!-- DEMO -->
 <blockquote class="twitter-tweet tw-align-center" data-lang="en"><p lang="en" dir="ltr">Our robot doesn’t handle backwards so well (wait for it…) <a href="https://t.co/FdoS30bxhB">pic.twitter.com/FdoS30bxhB</a></p>&mdash; Tom Hartley (@tmhrtly) <a href="https://twitter.com/tmhrtly/status/793760979322535937">November 2, 2016</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-<hr class="featurette-divider">
+<!-- <hr class="featurette-divider">
 <div class="row featurette">
   <div class="col-md-12">
     <h2 class="featurette-heading text-muted">PID Control</h2>
@@ -60,6 +74,6 @@ permalink: /projects/rpicar
     <p class="lead">We were supposed to detect and bump into 3 bottles which were placed on a given arena as fast as possible. Every group had freedom to choose their own approach. We were only allowed to use a rotating sonar sensor. We decided to go for place recognition. First we acquired readings of the sonar sensor at specificly chosen points on the arena (without any bottles) in order to build our places database. At the real challenge we reaquired readings at the same points and compared them to the ones we had in our database to detect anomalies, and hence, the bottles. There were substantially complex algorithms and filtering involved, which was very cool. We achieved extremely good accuracy.</p>
   </div>
 </div>
-
+ -->
 <hr class="featurette-divider">
 
