@@ -140,6 +140,10 @@ ul.social-buttons li a:active {
   text-transform: none !important;
 }
 
+.pub-authors{
+  color: #808080;  
+}
+
 /* ====================== PORTFOLIO ====================== */
 
 .portfolio-item {
