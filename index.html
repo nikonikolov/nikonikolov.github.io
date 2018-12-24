@@ -20,16 +20,15 @@ permalink: /
     <h2></h2>
     <!-- +++++++++++++++++++++++++++++++++ INTRO +++++++++++++++++++++++++++++++++ -->
     <p class="lead">
-    I am a student at <b>Imperial College London</b> pursuing <b>MEng in Electronic and Information Engineering</b> (with integrated BEng). Currently, I am doing the 4th year of my studies, including my Master's Thesis, as exchange student at <b>ETH Zurich</b>.
+    I am currently working as a Reinforcement Learning Researcher at Wayve. I recently graduated with a <b>MEng in Electronic and Information Engineering</b> (with integrated BEng) from <b>Imperial College London</b>. I spent the last year of my studies as exchange student at <b>ETH Zurich</b>, where I was part of Prof. <a href="https://las.inf.ethz.ch/krausea" target="_blank">Andreas Krause</a>'s research group at the <a href="https://las.inf.ethz.ch/" target="_blank">Learning & Adaptive Systems Lab</a>. Previously, I was also part of Prof. <a href="http://www.imperial.ac.uk/people/s.leutenegger" target="_blank">Stefan Leutenegger</a>'s group at the <a href="http://www.imperial.ac.uk/dyson-robotics-lab/" target="_blank">Dyson Robotics Lab</a> at Imperial.
     </p>
 
     <p class="lead">
-    My main research goal is to enable robots to learn new skills on their own in order to execute complex tasks in a variety of environments. In particular, I am currently working in <b>Deep Reinforcement Learning for Robotics</b>. I am also interested in Deep Learning and Computer Vision.
+    My research interests are to enable robots to learn new skills on their own in order to execute complex tasks in various environments. In particular, I am interested in <b>Deep Reinforcement Learning and Meta Learning for Robotics</b>.
     </p>
       
     <p class="lead">
-    Currently, I am part of Prof. <a href="https://las.inf.ethz.ch/krausea" target="_blank">Andreas Krause</a>'s research group at the <a href="https://las.inf.ethz.ch/" target="_blank">Learning & Adaptive Systems Lab</a> at ETH. Previously, I was part of Prof. <a href="http://www.imperial.ac.uk/people/s.leutenegger" target="_blank">Stefan Leutenegger</a>'s group at the <a href="http://www.imperial.ac.uk/dyson-robotics-lab/" target="_blank">Dyson Robotics Lab</a> at Imperial. 
-    I have also worked together with Prof. <a href="http://www.imperial.ac.uk/people/p.kormushev" target="_blank">Petar Kormushev</a> from the <a href="http://www.imperial.ac.uk/robot-intelligence/" target="_blank">Robot Intelligence Lab</a> and Prof. <a href="https://www.imperial.ac.uk/people/m.kovac" target="_blank">Mirko Kovac</a> at the <a href="https://www.imperial.ac.uk/aerial-robotics" target="_blank">Aerial Robotics Lab</a>. 
+    Previously, I have also worked together with Prof. <a href="http://www.imperial.ac.uk/people/p.kormushev" target="_blank">Petar Kormushev</a> at the <a href="http://www.imperial.ac.uk/robot-intelligence/" target="_blank">Robot Intelligence Lab</a> and Prof. <a href="https://www.imperial.ac.uk/people/m.kovac" target="_blank">Mirko Kovac</a> at the <a href="https://www.imperial.ac.uk/aerial-robotics" target="_blank">Aerial Robotics Lab</a>. 
     </p>
     <!-- In summer 2017, I interned at <a href="http://ocadotechnology.com/" target="_blank">Ocado Technology</a> as Robotics Research Intern.  -->
 
@@ -43,6 +42,8 @@ permalink: /
         <li><a href="https://github.com/{{site.github}}" target="_blank"><i class="fa fa-github fa contact_icon"></i>GitHub</a></li>
         
         <li><a href="https://www.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin-square fa contact_icon"></i>LinkedIn</a></li>
+
+        <li><a href="{{site.google-scholar}}" target="_blank"><i class="ai ai-google-scholar-square ai contact_icon"></i>Google Scholar</a></li>
       </ul>
     </div>
 
@@ -83,9 +84,26 @@ permalink: /
 
 <div class="row featurette publication">
   <div class="col-md-4">
+    <img class="featurette-image img-responsive center-block profile_pic" src="/img/portfolio/ids.png" alt="atari picture">
+  </div>
+  <div class="col-md-8">
+  <p class="lead"><b>Information-Directed Exploration for Deep Reinforcement Learning.</b><br>
+    <span class="pub-authors">Nikolay Nikolov, Johannes Kirschner, Felix Berkenkamp, Andreas Krause.<br></span>
+    <i>International Conference on Learning Representations (ICLR)</i> 2019.<br>
+    <div>
+      <!-- <a href="https://openreview.net/forum?id=Byx83s09Km">[PDF]</a> -->
+      <a href="https://arxiv.org/abs/1812.07544">[PDF]</a>
+    </div>
+  </p>
+  <p class="lead">We propose to use Information-Directed Sampling (IDS) for exploration in reinforcement learning. Unlike classical exploration strategies such as UCB and Thompson sampling, our method can account both for parametric uncertainty and heteroscedasticity in the return distribution. The resulting strategy achieves a significant improvement over C51, QR-DQN and IQN on the Atari games domain.
+  </p>
+  </div>
+</div>
+
+<div class="row featurette publication">
+  <div class="col-md-4">
     <img class="featurette-image img-responsive center-block profile_pic" src="/img/portfolio/bayesianslam.png" alt="bfusion picture">
   </div>
-
   <div class="col-md-8">
   <p class="lead"><b>Efficient Octree-Based Volumetric SLAM Supporting Signed-Distance and Occupancy Mapping.</b><br>
     <span class="pub-authors">Emanuele Vespa, Nikolay Nikolov, Marius Grimm, Luigi Nardi, Paul H J Kelly, Stefan Leutenegger.<br></span>
@@ -95,12 +113,10 @@ permalink: /
       <!-- <a href="https://www.doc.ic.ac.uk/~sleutene/publications/EVespaRAL_final.pdf">[PDF]</a> -->
       <a href="https://ieeexplore.ieee.org/document/8255617/">[PDF]</a>
     </div>
-
   </p>
   <p class="lead">We propose a bayesian formulation for fusing depth camera measurements in a volumetric occupancy octree grid. Our approach is particulary targeting SLAM applications and allows direct surface extraction from the octree. We also provide a CPU-optimized octree library for 3D reconstruction and SLAM that aims to allow implementing general-purpose real-time mapping algorithms.
   </p>
   </div>
-
 </div>
 
 <!-- ============================================================================ -->
