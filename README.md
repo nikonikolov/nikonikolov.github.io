@@ -1,5 +1,5 @@
 # Personal Website
-Available at http://nikonikolov.com/
+Available at http://nikonikolov.github.io/
 
 ## Testing Locally
 
