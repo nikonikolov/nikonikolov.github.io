@@ -88,6 +88,12 @@ h6 {
   text-align: center;
 }
 
+.work-title {
+  font-size: 18px;
+  font-family: "Lato", sans-serif;
+  color: #777777;
+}
+
 /* 
 .featurette-heading {
   font-weight: 300;
