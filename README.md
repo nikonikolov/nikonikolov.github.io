@@ -16,3 +16,7 @@ jekyll serve
 ```
 gem install jekyll
 ``` 
+
+## Deployment
+
+Can monitor deployment jobs and status at https://github.com/nikonikolov/nikonikolov.github.io/actions/
