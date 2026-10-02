@@ -1,22 +1,29 @@
 # Personal Website
+
 Available at http://nikonikolov.github.io/
 
-## Testing Locally
+Single-page static site (plain HTML + CSS, no build step). Layout adapted from
+[Jon Barron's website template](https://github.com/jonbarron/jonbarron_website).
 
-1. Run in terminal from the root directory:
+## Structure
+
+- `index.html` — the entire site (bio, Selected Research Projects, Other Projects)
+- `css/style.css` — the only stylesheet
+- `img/portfolio/` — paper/project thumbnails (`originals/` holds source versions)
+- `cv-nikolay-nikolov.pdf` — CV linked from the header
+- `.nojekyll` — tells GitHub Pages to serve files as-is (no Jekyll build)
+
+## Testing locally
+
+1. Run from the root directory:
 ```
-jekyll serve
+python3 -m http.server 8000
 ```
-2. Go to http://localhost:4000/
+2. Go to http://localhost:8000/
 
-3. Use `ctrl+shift+r` for refreshing in order to bypass the browser cache
-
-## Installing jekyll
-
-```
-gem install jekyll
-``` 
+3. Use `ctrl+shift+r` to refresh and bypass the browser cache
 
 ## Deployment
 
-Can monitor deployment jobs and status at https://github.com/nikonikolov/nikonikolov.github.io/actions/
+Push to `master`. Can monitor deployment jobs and status at
+https://github.com/nikonikolov/nikonikolov.github.io/actions/

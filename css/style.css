@@ -1,0 +1,170 @@
+/* Single-page academic site, visual style adapted from Jon Barron's template
+   (https://github.com/jonbarron/jonbarron_website), rebuilt with flexbox. */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #000;
+  background: #fff;
+  margin: 0;
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #f09228;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* ---------- Header / bio ---------- */
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 48px 0 8px;
+}
+
+.header-bio {
+  flex: 1 1 62%;
+}
+
+.header-bio .name {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 16px;
+}
+
+.header-photo {
+  flex: 0 0 34%;
+  text-align: center;
+}
+
+.header-photo img {
+  width: 100%;
+  max-width: 240px;
+  border-radius: 50%;
+}
+
+.links-row {
+  text-align: center;
+  margin-top: 18px;
+}
+
+/* ---------- Sections ---------- */
+
+.section-heading {
+  font-size: 22px;
+  font-weight: 400;
+  margin: 40px 0 4px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.section-intro {
+  margin: 10px 0 0;
+}
+
+/* ---------- Publication / project entries ---------- */
+
+.entry {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding: 20px 0;
+}
+
+.entry-image {
+  flex: 0 0 27%;
+  text-align: center;
+}
+
+.entry-image img,
+.entry-image video {
+  width: 100%;
+  display: block;
+}
+
+.entry-text {
+  flex: 1;
+}
+
+.papertitle {
+  font-weight: 700;
+}
+
+.venue {
+  font-style: italic;
+}
+
+.tldr {
+  margin: 6px 0 0;
+  color: #333;
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  text-align: right;
+  font-size: 12px;
+  color: #666;
+  padding: 40px 0 24px;
+}
+
+footer a {
+  color: #666;
+  text-decoration: underline;
+}
+
+footer a:hover {
+  color: #f09228;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 640px) {
+  .header {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding-top: 32px;
+  }
+
+  .header-photo {
+    flex: none;
+  }
+
+  .header-photo img {
+    max-width: 180px;
+  }
+
+  .entry {
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+  }
+
+  .entry-image {
+    flex: none;
+    width: 75%;
+    margin: 0 auto;
+  }
+}
